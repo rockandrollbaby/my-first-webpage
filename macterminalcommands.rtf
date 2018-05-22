@@ -1,0 +1,856 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red159\green160\blue28;
+\red46\green174\blue187;\red47\green180\blue29;\red180\green36\blue25;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c68468\c68012\c14208;
+\cssrgb\c20196\c73240\c78250;\cssrgb\c20238\c73898\c14947;\cssrgb\c76409\c21698\c12524;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf2 \cb3 \CocoaLigature0 Last login: Tue May 22 07:39:53 on console\
+Epicodus-9C:~ Guest$ cd desktop\
+Epicodus-9C:desktop Guest$ cd\
+Epicodus-9C:~ Guest$ touch .pairs\
+Epicodus-9C:~ Guest$ atom .pairs\
+Epicodus-9C:~ Guest$ git clone https://github.com/rockandrollbaby/my-first-webpage.git\
+Cloning into 'my-first-webpage'...\
+remote: Counting objects: 16, done.\
+remote: Compressing objects: 100% (11/11), done.\
+remote: Total 16 (delta 2), reused 16 (delta 2), pack-reused 0\
+Unpacking objects: 100% (16/16), done.\
+Epicodus-9C:~ Guest$ pwd\
+/Users/Guest\
+Epicodus-9C:~ Guest$ ls\
+Applications		Library			Public\
+Desktop			Movies			my-first-webpage\
+Documents		Music			node_modules\
+Downloads		Pictures		package-lock.json\
+Epicodus-9C:~ Guest$ cd desktop\
+Epicodus-9C:desktop Guest$ ls\
+my-first-webpage\
+Epicodus-9C:desktop Guest$ cd my-first-webpage/\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+    added tags and text to file\
+\
+\cf4 commit 24967321ea8cacc2075cf10320220bb1226196ce\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:24:46 2018 -0700\
+\
+    add final tags and html doctype\
+\
+\cf4 commit abb8cfa86698e59ea11a76e9f5c2ad4ea0ca3100\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:17:27 2018 -0700\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote -v\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (fetch)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (push)\
+Epicodus-9C:my-first-webpage Guest$ ls\
+favorite-things.html	my-first-webpage.html\
+Epicodus-9C:my-first-webpage Guest$ ls -a\
+.			.git			my-first-webpage.html\
+..			favorite-things.html\
+Epicodus-9C:my-first-webpage Guest$ touch README.md\
+Epicodus-9C:my-first-webpage Guest$ ls -a\
+.			.git			favorite-things.html\
+..			README.md		my-first-webpage.html\
+Epicodus-9C:my-first-webpage Guest$ atom .\
+Epicodus-9C:my-first-webpage Guest$ git add README.md\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf6 new file:   README.md\cf2 \
+\
+Epicodus-9C:my-first-webpage Guest$ git-pair-commit -m "documented the purpose and technical details of my-first-webpage\
+> "\
+Error: No pair set. Please set your pair with `git pair ...`\
+Epicodus-9C:my-first-webpage Guest$ git pair cs rg\
+NOTE: Overriding global user.name setting with local.\
+global: user.name Student\
+local:  user.name Cynthia Smith and Reese Glasscock\
+NOTE: Overriding global user.email setting with local.\
+global: user.email example@example.com\
+local:  user.email cynthia+reese@\
+local:  user.initials cs rg\
+Epicodus-9C:my-first-webpage Guest$ git-pair-commit -m "document the purpose and technical details of my-first-webpage"\
+Committing under reese@\
+[master 5baca01] document the purpose and technical details of my-first-webpage\
+ 1 file changed, 30 insertions(+)\
+ create mode 100644 README.md\
+Epicodus-9C:my-first-webpage Guest$ git push cs master \
+fatal: 'cs' does not appear to be a git repository\
+fatal: Could not read from remote repository.\
+\
+Please make sure you have the correct access rights\
+and the repository exists.\
+Epicodus-9C:my-first-webpage Guest$ git remote add cs https://github.com/rockandrollbaby/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git push cs master\
+Username for 'https://github.com': cynthia.writer01@gmail.com\
+Password for 'https://cynthia.writer01@gmail.com@github.com': \
+Counting objects: 3, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 844 bytes | 844.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0)\
+To https://github.com/rockandrollbaby/my-first-webpage\
+   14088b7..5baca01  master -> master\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg https://github.com/reeseglasscock/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git add README.md \
+Epicodus-9C:my-first-webpage Guest$ git push rg master\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+To https://github.com/reeseglasscock/my-first-webpage\
+ ! [rejected]        master -> master (fetch first)\
+error: failed to push some refs to 'https://github.com/reeseglasscock/my-first-webpage'\
+hint: Updates were rejected because the remote contains work that you do\
+hint: not have locally. This is usually caused by another repository pushing\
+hint: to the same ref. You may want to first integrate the remote changes\
+hint: (e.g., 'git pull ...') before pushing again.\
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git push --help\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+    added tags and text to file\
+\
+\cf4 commit 24967321ea8cacc2075cf10320220bb1226196ce\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:24:46 2018 -0700\
+\
+    add final tags and html doctype\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git about\
+git user:       Cynthia Smith and Reese Glasscock\
+git email:      cynthia+reese@\
+GitHub project: NONE\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git push rg --force\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+Counting objects: 19, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (16/16), done.\
+Writing objects: 100% (19/19), 2.83 KiB | 1.41 MiB/s, done.\
+Total 19 (delta 2), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (2/2), done.\
+To https://github.com/reeseglasscock/my-first-webpage\
+ + da5721d...5baca01 master -> master (forced update)\
+Epicodus-9C:my-first-webpage Guest$ git reflog\
+\cf4 5baca01 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2  HEAD@\{0\}: commit: document the purpose and technical details of my-first-webpage\
+\cf4 14088b7 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2  HEAD@\{1\}: clone: from https://github.com/rockandrollbaby/my-first-webpage.git\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+    added tags and text to file\
+\
+\cf4 commit 24967321ea8cacc2075cf10320220bb1226196ce\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:24:46 2018 -0700\
+\
+    add final tags and html doctype\
+\
+\cf4 commit abb8cfa86698e59ea11a76e9f5c2ad4ea0ca3100\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:17:27 2018 -0700\
+\
+    add list elements\
+\
+\cf4 commit d2a0589d3d287b025038ef826170a9a5b80021cf\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:10:03 2018 -0700\
+\
+    created my first web page and added paragraphs\
+Epicodus-9C:my-first-webpage Guest$ mkdir css\
+Epicodus-9C:my-first-webpage Guest$ cd ss\
+-bash: cd: ss: No such file or directory\
+Epicodus-9C:my-first-webpage Guest$ cd css\
+Epicodus-9C:css Guest$ touch style.css\
+Epicodus-9C:css Guest$ pwd\
+/Users/Guest/desktop/my-first-webpage/css\
+Epicodus-9C:css Guest$ cd\
+Epicodus-9C:~ Guest$ git clone https://github.com/putman10/my-first-webpage.git\
+Cloning into 'my-first-webpage'...\
+remote: Counting objects: 44, done.\
+remote: Compressing objects: 100% (33/33), done.\
+remote: Total 44 (delta 10), reused 40 (delta 6), pack-reused 0\
+Unpacking objects: 100% (44/44), done.\
+Epicodus-9C:~ Guest$ ls\
+Applications		Library			Public\
+Desktop			Movies			my-first-webpage\
+Documents		Music			node_modules\
+Downloads		Pictures		package-lock.json\
+Epicodus-9C:~ Guest$ git git remote add https://github.com/reeseglasscock/my-first-webpage.git\
+git: 'git' is not a git command. See 'git --help'.\
+\
+The most similar command is\
+	init\
+Epicodus-9C:~ Guest$ git remote add https://github.com/reeseglasscock/my-first-webpage.git\
+fatal: Not a git repository (or any of the parent directories): .git\
+Epicodus-9C:~ Guest$ cd my-first-webpage/\
+Epicodus-9C:my-first-webpage Guest$ git remote add https://github.com/reeseglasscock/my-first-webpage.git\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=<push|fetch>]\
+                          set up remote as a mirror to push to or fetch from\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote add https://github.com/reeseglasscock/my-first-webpage.git\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=<push|fetch>]\
+                          set up remote as a mirror to push to or fetch from\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg https://github.com/reeseglasscock/my-first-webpage.git\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit d6bfd369f4b8465e344cfe6be6f279c38009a08f (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Guest User <Guest@Epicodus-10D.local>\
+Date:   Tue May 22 10:07:31 2018 -0700\
+\
+    add stylesheet and styles for favorite things and favorite places.\
+\
+\cf4 commit 501ec28f50153a9e8716245d9bdb6642a5e56523\cf2 \
+Author: Guest User <Guest@Epicodus-10D.local>\
+Date:   Tue May 22 08:38:25 2018 -0700\
+\
+    add README file to project\
+\
+\cf4 commit da5721d76fa5db0f41efacd3a3c6f289f8a9a995\cf2 \
+Author: Reese Glasscock and Ryan Putman <reese@>\
+Date:   Mon May 21 15:13:08 2018 -0700\
+\
+    update links and add inline elements\
+\
+\cf4 commit 7adb468b63f17ff5946a8c3329d0180d12220f7a\cf2 \
+Author: Reese Glasscock and Ryan Putman <reese@>\
+Date:   Mon May 21 14:53:25 2018 -0700\
+\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git push rg master\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+To https://github.com/reeseglasscock/my-first-webpage.git\
+ ! [rejected]        master -> master (fetch first)\
+error: failed to push some refs to 'https://github.com/reeseglasscock/my-first-webpage.git'\
+hint: Updates were rejected because the remote contains work that you do\
+hint: not have locally. This is usually caused by another repository pushing\
+hint: to the same ref. You may want to first integrate the remote changes\
+hint: (e.g., 'git pull ...') before pushing again.\
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.\
+Epicodus-9C:my-first-webpage Guest$ git push rg --force\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+Counting objects: 44, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (39/39), done.\
+Writing objects: 100% (44/44), 7.65 MiB | 6.83 MiB/s, done.\
+Total 44 (delta 10), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (10/10), done.\
+To https://github.com/reeseglasscock/my-first-webpage.git\
+ + 5baca01...d6bfd36 master -> master (forced update)\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ cd\
+Epicodus-9C:~ Guest$ cd desktop\
+Epicodus-9C:desktop Guest$ pwd\
+/Users/Guest/desktop\
+Epicodus-9C:desktop Guest$ cd my-first-webpage/\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf7 modified:   my-first-webpage.html\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf7 css/\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Epicodus-9C:my-first-webpage Guest$ cd\
+Epicodus-9C:~ Guest$ cd my-first-webpage/\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git pull\
+remote: Counting objects: 2, done.\
+remote: Compressing objects: 100% (1/1), done.\
+remote: Total 2 (delta 1), reused 2 (delta 1), pack-reused 0\
+Unpacking objects: 100% (2/2), done.\
+From https://github.com/putman10/my-first-webpage\
+   d6bfd36..f260630  master     -> origin/master\
+ * [new branch]      gh-pages   -> origin/gh-pages\
+Updating d6bfd36..f260630\
+Fast-forward\
+ favorite-things.html => index.html | 0\
+ 1 file changed, 0 insertions(+), 0 deletions(-)\
+ rename favorite-things.html => index.html (100%)\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is up to date with 'origin/master'.\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ cd\
+Epicodus-9C:~ Guest$ cd Desktop/\
+Epicodus-9C:Desktop Guest$ pwd\
+/Users/Guest/Desktop\
+Epicodus-9C:Desktop Guest$ cd my-first-webpage/\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/Desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ ls\
+README.md		favorite-things.html\
+css			my-first-webpage.html\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes not staged for commit:\
+  (use "git add <file>..." to update what will be committed)\
+  (use "git checkout -- <file>..." to discard changes in working directory)\
+\
+	\cf7 modified:   my-first-webpage.html\cf2 \
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+\
+	\cf7 css/\cf2 \
+\
+no changes added to commit (use "git add" and/or "git commit -a")\
+Epicodus-9C:my-first-webpage Guest$ git about\
+git user:       Cynthia Smith and Reese Glasscock\
+git email:      cynthia+reese@\
+GitHub project: NONE\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+    added tags and text to file\
+\
+\cf4 commit 24967321ea8cacc2075cf10320220bb1226196ce\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:24:46 2018 -0700\
+\
+...skipping...\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+    added tags and text to file\
+\
+\cf4 commit 24967321ea8cacc2075cf10320220bb1226196ce\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:24:46 2018 -0700\
+\
+    add final tags and html doctype\
+Epicodus-9C:my-first-webpage Guest$ git remote -v\
+cs	https://github.com/rockandrollbaby/my-first-webpage (fetch)\
+cs	https://github.com/rockandrollbaby/my-first-webpage (push)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (fetch)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (push)\
+rg	https://github.com/reeseglasscock/my-first-webpage (fetch)\
+rg	https://github.com/reeseglasscock/my-first-webpage (push)\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/Desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ open .\
+Epicodus-9C:my-first-webpage Guest$ atom .\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/Desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git branch -help\
+usage: git branch [<options>] [-r | -a] [--merged | --no-merged]\
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]\
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...\
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>\
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>\
+   or: git branch [<options>] [-r | -a] [--points-at]\
+   or: git branch [<options>] [-r | -a] [--format]\
+\
+Generic options\
+    -v, --verbose         show hash and subject, give twice for upstream branch\
+    -q, --quiet           suppress informational messages\
+    -t, --track           set up tracking mode (see git-pull(1))\
+    -u, --set-upstream-to <upstream>\
+                          change the upstream info\
+    --unset-upstream      Unset the upstream info\
+    --color[=<when>]      use colored output\
+    -r, --remotes         act on remote-tracking branches\
+    --contains <commit>   print only branches that contain the commit\
+    --no-contains <commit>\
+                          print only branches that don't contain the commit\
+    --abbrev[=<n>]        use <n> digits to display SHA-1s\
+\
+Specific git-branch actions:\
+    -a, --all             list both remote-tracking and local branches\
+    -d, --delete          delete fully merged branch\
+    -D                    delete branch (even if not merged)\
+    -m, --move            move/rename a branch and its reflog\
+    -M                    move/rename a branch, even if target exists\
+    -c, --copy            copy a branch and its reflog\
+    -C                    copy a branch, even if target exists\
+    --list                list branch names\
+    -l, --create-reflog   create the branch's reflog\
+    --edit-description    edit the description for the branch\
+    -f, --force           force creation, move/rename, deletion\
+    --merged <commit>     print only branches that are merged\
+    --no-merged <commit>  print only branches that are not merged\
+    --column[=<style>]    list branches in columns\
+    --sort <key>          field name to sort on\
+    --points-at <object>  print only branches of the object\
+    -i, --ignore-case     sorting and filtering are case insensitive\
+    --format <format>     format to use for the output\
+\
+Epicodus-9C:my-first-webpage Guest$ git branch -a\
+* \cf6 master\cf2 \
+  \cf7 remotes/cs/master\cf2 \
+  \cf7 remotes/origin/HEAD\cf2  -> origin/master\
+  \cf7 remotes/origin/master\cf2 \
+  \cf7 remotes/rg/master\cf2 \
+Epicodus-9C:my-first-webpage Guest$ touch favorite-places.html\
+Epicodus-9C:my-first-webpage Guest$ ls\
+README.md		favorite-places.html	my-first-webpage.html\
+css			favorite-things.html\
+Epicodus-9C:my-first-webpage Guest$ cd css\
+Epicodus-9C:css Guest$ touch favstyle.css\
+Epicodus-9C:css Guest$ ls\
+favstyle.css	style.css\
+Epicodus-9C:css Guest$ cd ..\
+Epicodus-9C:my-first-webpage Guest$ mkdir img\
+Epicodus-9C:my-first-webpage Guest$ git add -A\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 1 commit.\
+  (use "git push" to publish your local commits)\
+\
+Changes to be committed:\
+  (use "git reset HEAD <file>..." to unstage)\
+\
+	\cf6 new file:   css/favstyle.css\cf2 \
+	\cf6 new file:   css/style.css\cf2 \
+	\cf6 new file:   favorite-places.html\cf2 \
+	\cf6 new file:   img/bucketlist.jpg\cf2 \
+	\cf6 new file:   img/nike.jpg\cf2 \
+	\cf6 new file:   img/powells.jpg\cf2 \
+	\cf6 new file:   img/saturdaymarket.jpg\cf2 \
+	\cf6 new file:   img/voodoo.jpg\cf2 \
+	\cf6 modified:   my-first-webpage.html\cf2 \
+\
+Epicodus-9C:my-first-webpage Guest$ git-pair-commit -a -m "added favstyle.css to my-first-webpage and favorite-places. added photos for favorite places."\
+Committing under cynthia@\
+[master 79c4e68] added favstyle.css to my-first-webpage and favorite-places. added photos for favorite places.\
+ 9 files changed, 94 insertions(+)\
+ create mode 100644 css/favstyle.css\
+ create mode 100644 css/style.css\
+ create mode 100644 favorite-places.html\
+ create mode 100644 img/bucketlist.jpg\
+ create mode 100644 img/nike.jpg\
+ create mode 100644 img/powells.jpg\
+ create mode 100644 img/saturdaymarket.jpg\
+ create mode 100644 img/voodoo.jpg\
+Epicodus-9C:my-first-webpage Guest$ git push cs master \
+Username for 'https://github.com': cynthia.writer01@gmail.com\
+Password for 'https://cynthia.writer01@gmail.com@github.com': \
+Counting objects: 13, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (13/13), done.\
+Writing objects: 100% (13/13), 1.91 MiB | 4.31 MiB/s, done.\
+Total 13 (delta 1), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.\
+To https://github.com/rockandrollbaby/my-first-webpage\
+   5baca01..79c4e68  master -> master\
+Epicodus-9C:my-first-webpage Guest$ pwd\
+/Users/Guest/Desktop/my-first-webpage\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg https://github.com/reeseglasscock/my-second-webpage.git\
+fatal: remote rg already exists.\
+Epicodus-9C:my-first-webpage Guest$ git remote -v\
+cs	https://github.com/rockandrollbaby/my-first-webpage (fetch)\
+cs	https://github.com/rockandrollbaby/my-first-webpage (push)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (fetch)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (push)\
+rg	https://github.com/reeseglasscock/my-first-webpage (fetch)\
+rg	https://github.com/reeseglasscock/my-first-webpage (push)\
+Epicodus-9C:my-first-webpage Guest$ git remote rg https://github.com/reeseglasscock/my-second-webpage.git\
+error: Unknown subcommand: rg\
+usage: git remote [-v | --verbose]\
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>\
+   or: git remote rename <old> <new>\
+   or: git remote remove <name>\
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)\
+   or: git remote [-v | --verbose] show [-n] <name>\
+   or: git remote prune [-n | --dry-run] <name>\
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]\
+   or: git remote set-branches [--add] <name> <branch>...\
+   or: git remote get-url [--push] [--all] <name>\
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]\
+   or: git remote set-url --add <name> <newurl>\
+   or: git remote set-url --delete <name> <url>\
+\
+    -v, --verbose         be verbose; must be placed before a subcommand\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg https://github.com/reeseglasscock/my-second-webpage.git\
+fatal: remote rg already exists.\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg -m https://github.com/reeseglasscock/my-second-webpage.git\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=<push|fetch>]\
+                          set up remote as a mirror to push to or fetch from\
+\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 79c4e68f416f6c8bb854f79b44414c29e60a3208 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <cynthia@>\
+Date:   Tue May 22 11:38:56 2018 -0700\
+\
+    added favstyle.css to my-first-webpage and favorite-places. added photos for favorite places.\
+\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0 (
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+\
+Epicodus-9C:my-first-webpage Guest$ git about\
+git user:       Cynthia Smith and Reese Glasscock\
+git email:      cynthia+reese@\
+GitHub project: NONE\
+Epicodus-9C:my-first-webpage Guest$ git remote -v\
+cs	https://github.com/rockandrollbaby/my-first-webpage (fetch)\
+cs	https://github.com/rockandrollbaby/my-first-webpage (push)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (fetch)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (push)\
+rg	https://github.com/reeseglasscock/my-first-webpage (fetch)\
+rg	https://github.com/reeseglasscock/my-first-webpage (push)\
+Epicodus-9C:my-first-webpage Guest$ git remote add rg https://github.com/reeseglasscock/my-second-webpage.git\
+fatal: remote rg already exists.\
+Epicodus-9C:my-first-webpage Guest$ git remote rg set-url\
+error: Unknown subcommand: rg\
+usage: git remote [-v | --verbose]\
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>\
+   or: git remote rename <old> <new>\
+   or: git remote remove <name>\
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)\
+   or: git remote [-v | --verbose] show [-n] <name>\
+   or: git remote prune [-n | --dry-run] <name>\
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]\
+   or: git remote set-branches [--add] <name> <branch>...\
+   or: git remote get-url [--push] [--all] <name>\
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]\
+   or: git remote set-url --add <name> <newurl>\
+   or: git remote set-url --delete <name> <url>\
+\
+    -v, --verbose         be verbose; must be placed before a subcommand\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote rg set-url https://github.com/reeseglasscock/my-second-webpage.git\
+error: Unknown subcommand: rg\
+usage: git remote [-v | --verbose]\
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>\
+   or: git remote rename <old> <new>\
+   or: git remote remove <name>\
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)\
+   or: git remote [-v | --verbose] show [-n] <name>\
+   or: git remote prune [-n | --dry-run] <name>\
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]\
+   or: git remote set-branches [--add] <name> <branch>...\
+   or: git remote get-url [--push] [--all] <name>\
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]\
+   or: git remote set-url --add <name> <newurl>\
+   or: git remote set-url --delete <name> <url>\
+\
+    -v, --verbose         be verbose; must be placed before a subcommand\
+\
+Epicodus-9C:my-first-webpage Guest$ git remote set-url rg https://github.com/reeseglasscock/my-second-webpage.git\
+Epicodus-9C:my-first-webpage Guest$ git remote -v\
+cs	https://github.com/rockandrollbaby/my-first-webpage (fetch)\
+cs	https://github.com/rockandrollbaby/my-first-webpage (push)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (fetch)\
+origin	https://github.com/rockandrollbaby/my-first-webpage.git (push)\
+rg	https://github.com/reeseglasscock/my-second-webpage.git (fetch)\
+rg	https://github.com/reeseglasscock/my-second-webpage.git (push)\
+Epicodus-9C:my-first-webpage Guest$ git push rg master\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+Counting objects: 32, done.\
+Delta compression using up to 4 threads.\
+Compressing objects: 100% (29/29), done.\
+Writing objects: 100% (32/32), 1.91 MiB | 4.60 MiB/s, done.\
+Total 32 (delta 5), reused 0 (delta 0)\
+remote: Resolving deltas: 100% (5/5), done.\
+To https://github.com/reeseglasscock/my-second-webpage.git\
+ * [new branch]      master -> master\
+Epicodus-9C:my-first-webpage Guest$ git branch gh-pages\
+Epicodus-9C:my-first-webpage Guest$ git status\
+On branch master\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+\
+nothing to commit, working tree clean\
+Epicodus-9C:my-first-webpage Guest$ git log\
+\cf4 commit 79c4e68f416f6c8bb854f79b44414c29e60a3208 (
+\f1\b \cf5 HEAD -> \cf6 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 rg/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 cs/master
+\f0\b0 \cf4 , 
+\f1\b \cf6 gh-pages
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Reese Glasscock <cynthia@>\
+Date:   Tue May 22 11:38:56 2018 -0700\
+\
+    added favstyle.css to my-first-webpage and favorite-places. added photos for favorite places.\
+\
+\cf4 commit 5baca01e5a518e18dd7391390c5c84bb9964b9b0\cf2 \
+Author: Cynthia Smith and Reese Glasscock <reese@>\
+Date:   Tue May 22 09:26:45 2018 -0700\
+\
+    document the purpose and technical details of my-first-webpage\
+\
+\cf4 commit 14088b7e55023b95d5d91c3c4ba877cdd8b8d0b8 (
+\f1\b \cf7 origin/master
+\f0\b0 \cf4 , 
+\f1\b \cf7 origin/HEAD
+\f0\b0 \cf4 )\cf2 \
+Author: Cynthia Smith and Renee Sarley <cynthia@>\
+Date:   Mon May 21 15:46:04 2018 -0700\
+\
+    final commit for favorite-things.html and my-first-webpage.html\
+\
+\cf4 commit 1624dce94dbbd72c3be949ceaa633d355df21709\cf2 \
+Author: Cynthia Smith and Renee Sarley <renee@>\
+Date:   Mon May 21 14:58:08 2018 -0700\
+Epicodus-9C:my-first-webpage Guest$ git branch\
+  gh-pages\
+* \cf6 master\cf2 \
+Epicodus-9C:my-first-webpage Guest$ git checkout gh-pages\
+Switched to branch 'gh-pages'\
+Epicodus-9C:my-first-webpage Guest$ git push rg gh-pages\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/reeseglasscock/my-second-webpage.git/'\
+Epicodus-9C:my-first-webpage Guest$ git push rg gh-pages\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+remote: Invalid username or password.\
+fatal: Authentication failed for 'https://github.com/reeseglasscock/my-second-webpage.git/'\
+Epicodus-9C:my-first-webpage Guest$ git push rg gh-pages\
+Username for 'https://github.com': reeseglasscock\
+Password for 'https://reeseglasscock@github.com': \
+Total 0 (delta 0), reused 0 (delta 0)\
+To https://github.com/reeseglasscock/my-second-webpage.git\
+ * [new branch]      gh-pages -> gh-pages\
+Epicodus-9C:my-first-webpage Guest$ git checkout master\
+Switched to branch 'master'\
+Your branch is ahead of 'origin/master' by 2 commits.\
+  (use "git push" to publish your local commits)\
+Epicodus-9C:my-first-webpage Guest$ git about\
+git user:       Cynthia Smith and Reese Glasscock\
+git email:      cynthia+reese@\
+GitHub project: NONE\
+Epicodus-9C:my-first-webpage Guest$ git branch\
+  gh-pages\
+* \cf6 master\cf2 \
+Epicodus-9C:my-first-webpage Guest$ \
+}
