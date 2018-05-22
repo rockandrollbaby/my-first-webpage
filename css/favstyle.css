@@ -1,0 +1,28 @@
+
+body {
+  color: black;
+  background-color: beige;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+}
+
+img {
+  height: 300px;
+}
+
+figure {
+  display:inline-table;
+
+}
+
+h1 {
+  text-align: center;
+  color: green;
+}
+
+h2 {
+  padding: 0 40px;
+  font-style: italic;
+  font-weight: lighter;
+  line-height: 2rem;
+}
